@@ -1,12 +1,15 @@
 # 3 Excercise: Draw a square
 
-#def square():
+# Defining square function
+def square():
+    side = int(input("Please Enter any Side of a Square  : ")) # Prompt user input
 
-side = int(input("Please Enter any Side of a Square  : "))
+    print("Square Hash Pattern") 
 
-print("Square Star Pattern") 
-
-for i in range(side):
+    # For loop to print square
     for i in range(side):
-        print('#', end = '  ')
-    print()
+        for i in range(side):
+            print('#', end = '  ')
+
+# Printing the square function
+print(square())
